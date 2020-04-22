@@ -12,7 +12,8 @@
     "watch:sass": "parcel watch ./src/main.scss --out-dir ./dist --out-file main.css",
     "watch:js": "parcel watch ./src/index.js --out-dir ./dist --out-file bundle.js",
     "build:sass": "parcel build ./src/main.scss --out-dir ./dist --out-file main.css",
-    "build:js": "parcel build ./src/index.js --out-dir ./dist --out-file bundle.js"
+    "build:js": "parcel build ./src/index.js --out-dir ./dist --out-file bundle.js",
+    "start": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",
