@@ -1,0 +1,99 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: minmax(10px, 1fr) minmax(min-content, 1410px) minmax(10px, 1fr);
+    grid-template-rows: minmax(10px, 1fr) minmax(min-content, 1410px) minmax(10px, 1fr);
+}
+
+.content{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr max-content; 
+}
+
+.header{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.mainContent{
+    grid-column: 1;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90vh 100vh;
+
+    .upperSection{
+        grid-column: 1;
+        grid-row: 1 / 2;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .underSection{
+        grid-column: 1;
+        grid-row: 2 / -1;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        .firstParagrafOnama{
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .secondParagrafOnama{
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .oNamaText{
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .btnOnamaDetaljnije{
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+
+    .dottedBack{
+        grid-column: 1;
+        grid-row: 1 / -1;
+    }
+
+    .exes{
+        grid-column: 1;
+        grid-row: 1 / -1;
+    }
+
+    .lines{
+        grid-column: 1;
+        grid-row: 1 / -1;
+    }
+
+    .slug{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .btnOnama{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .josLinkOnama{
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+.footer{
+    grid-column: 1;
+    grid-row: 3;
+}

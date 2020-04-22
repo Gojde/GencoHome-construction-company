@@ -1,0 +1,20 @@
+{
+  "name": "GencoHomeConstructionSolution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.26.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch:sass": "parcel watch ./src/main.scss --out-dir ./dist --out-file main.css",
+    "watch:js": "parcel watch ./src/index.js --out-dir ./dist --out-file bundle.js",
+    "build:sass": "parcel build ./src/main.scss --out-dir ./dist --out-file main.css",
+    "build:js": "parcel build ./src/index.js --out-dir ./dist --out-file bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
