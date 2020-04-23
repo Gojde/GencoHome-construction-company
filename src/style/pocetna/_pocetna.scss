@@ -164,6 +164,7 @@
 
     .underSection{
         height: 100%;
+        margin-bottom: 10rem;
         h1{
             height: max-content;
             font-size: 3rem;
@@ -187,6 +188,7 @@
             height: max-content;
             justify-self: center;
             margin-top: 5rem;
+            z-index: 10;
 
             button{
                 width: 18rem;
@@ -197,13 +199,13 @@
                 background-color: black;
                 border: none;
                 border-radius: 5px;
+                
             }
         }
     }
 }
 
 .footer{
-    // margin-top: 8rem;
     width: 100%;
     text-align: center;
     color: white;
