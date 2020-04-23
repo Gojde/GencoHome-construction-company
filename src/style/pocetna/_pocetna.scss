@@ -54,11 +54,19 @@
             top: 131.6rem;
             left: 21.5rem;
             fill: #1173A8;
+
+            @media only screen and (max-height: 750px){
+                display: none;
+            }
         }
 
         .ex6{
             top: 142.6rem;
             left: 10.5rem;
+
+            @media only screen and (max-height: 785px){
+                display: none;
+            }
         }
     }
 
@@ -117,9 +125,9 @@
 
         button{
             cursor: pointer;
-            width: 20rem;
+            width: 18rem;
             height: 5rem;
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: white;
             outline: none;
             background-color: black;
@@ -131,7 +139,6 @@
     
     .josLinkOnama{
         width: 100%;
-        height: 87vh;
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -142,13 +149,12 @@
             align-items: center;
             flex-direction: column;
             width: 10rem;
-            bottom: 3.2rem;
-            left: .8rem;
             text-decoration: none;
             color: black;
             font-size: 2.5rem;
             font-weight: 500;
-
+            margin-bottom: 4rem;
+            
         }
 
         svg{
@@ -157,15 +163,18 @@
     }
 
     .underSection{
+        height: 100%;
         h1{
-            font-size: 3.6rem;
+            height: max-content;
+            font-size: 3rem;
             font-weight: 900;
             justify-self: center;
-            padding-top: 8rem;
+            padding-top: 7rem;
         }
 
         p{
-            font-size: 2rem;
+            padding-top: 5rem;
+            font-size: 1.7rem;
             text-align: center;
 
             span{
@@ -173,45 +182,33 @@
             }
         }
 
-        .firstParagrafOnama{
-            padding-top: 20rem;
-        }
-
-        .secondParagrafOnama{
-            padding-top: 8rem;
-            align-self: center;
-        }
-
         .btnOnamaDetaljnije{
             width: max-content;
             height: max-content;
             justify-self: center;
-            align-self: flex-end;
-            margin-bottom: 13.5rem;
-            z-index: 9;
+            margin-top: 5rem;
 
             button{
-                width: 20rem;
+                width: 18rem;
                 height: 5rem;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 color: white;
                 outline: none;
                 background-color: black;
                 border: none;
                 border-radius: 5px;
-                z-index: 100;
             }
         }
     }
 }
 
 .footer{
+    // margin-top: 8rem;
     width: 100%;
     text-align: center;
     color: white;
     background-color: black;
     padding: 20px 0 20px 0;
-    z-index: 10;
 
     p{
         padding: 10px 0 10px 0;
