@@ -22,6 +22,7 @@
     height: 100%;
 
     .exes{
+        z-index: -1;
         position: relative;
         svg{
             position: absolute;
@@ -71,6 +72,7 @@
     }
 
     .lines{
+        z-index: -2;
         .svgLine{
             width: 100%;
             height: 100%;
@@ -83,6 +85,7 @@
     }
 
     .dottedBack{
+        z-index: -3;
         width: 110%;
         height: 100%;
         margin-left: -4.5rem;
@@ -114,6 +117,46 @@
             font-size: 2rem;
             margin-left: 21.5rem;
         }
+
+        @media only screen and (min-width: 750px){
+
+            #slugOne{
+                font-size: 5rem;
+                margin-left: -26rem;
+            }
+
+            #slugTwo{
+                font-size: 5rem;
+                margin-left: 8rem;
+            }
+
+            #slugThree{
+                font-size: 2rem;
+                margin-left: 30.5rem;
+            }
+        }
+
+        @media only screen and (min-width: 1024px){
+            text-align: left;
+            margin-left: 5rem;
+
+            #slugOne{
+                font-size: 5rem;
+                margin-left: 0;
+            }
+
+            #slugTwo{
+                font-size: 5rem;
+                margin-left: 8rem;
+            }
+
+            #slugThree{
+                font-size: 2rem;
+                margin-left: 35rem;
+            }
+        }
+
+        
     }
 
     .btnOnama{
@@ -138,17 +181,17 @@
     }
     
     .josLinkOnama{
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        width: max-content;
+        height: max-content;
+        align-self: flex-end;
+        justify-self: center;
 
         a{
             cursor: pointer;
             display: flex;
             align-items: center;
             flex-direction: column;
-            width: 10rem;
+            // width: 10rem;
             text-decoration: none;
             color: black;
             font-size: 2.5rem;
@@ -165,6 +208,7 @@
     .underSection{
         height: 100%;
         margin-bottom: 10rem;
+
         h1{
             height: max-content;
             font-size: 3rem;
@@ -181,6 +225,23 @@
             span{
                 color: #1173A8;
             }
+
+            @media only screen and (min-width: 750px){
+                padding: 0 4rem 0 4rem;
+            }
+        }
+
+        .firstParagrafOnama{
+            @media only screen and (min-width: 1024px){
+                width: 50%;
+            }
+        }
+
+        .secondParagrafOnama{
+            @media only screen and (min-width: 1024px){
+                width: 50%;
+                justify-self: flex-end;
+            }
         }
 
         .btnOnamaDetaljnije{
@@ -188,7 +249,7 @@
             height: max-content;
             justify-self: center;
             margin-top: 5rem;
-            z-index: 10;
+            // z-index: 10;
 
             button{
                 width: 18rem;
@@ -214,5 +275,10 @@
 
     p{
         padding: 10px 0 10px 0;
+    }
+
+    @media only screen and (min-width: 750px){
+        display: flex;
+        justify-content: space-around;
     }
 }
