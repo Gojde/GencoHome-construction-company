@@ -7,7 +7,21 @@
     "parcel": "^1.12.4",
     "sass": "^1.26.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.6"
+  },
+  "postcss":{
+    "plugins":{
+      "autoprefixer":{
+        "overrideBrowserslist":[
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "ie >= 9"
+        ]
+      }
+    }
+  },
   "scripts": {
     "watch:sass": "parcel watch ./src/main.scss --out-dir ./dist --out-file main.css",
     "watch:js": "parcel watch ./src/index.js --out-dir ./dist --out-file bundle.js",
