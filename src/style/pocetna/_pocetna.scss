@@ -3,282 +3,302 @@
     height: 100vh;
 }
 
-.content{
-    width: 100%;
-    height: max-content;
-}
+.Onama{
 
-.header{
-    width: 100%;
-    padding: .5rem;
+    &__content{
+        width: 100%;
+        height: max-content;
 
-    img{
-        width: 10rem;
-    }
-}
-
-.mainContent{
-    width: 100%;
-    height: 100%;
-
-    .exes{
-        z-index: -1;
-        position: relative;
-        svg{
-            position: absolute;
-            width: 2.5rem;
-            height: auto;
-        }
-
-        .ex1{
-            top: 10.6rem;
-            left: -.4rem;
-            fill: #1173A8;
-        }
-
-        .ex2{
-            top: 32.6rem;
-            left: 32.5rem;
-        }
-
-        .ex3{
-            top: 54.6rem;
-            left: 10.5rem;
-        }
-
-        .ex4{
-            top: 76.6rem;
-            left: 32.5rem;
-        }
-
-        .ex5{
-            top: 131.6rem;
-            left: 21.5rem;
-            fill: #1173A8;
-
-            @media only screen and (max-height: 750px){
-                display: none;
+        &-header{
+            width: 100%;
+            padding: .5rem;
+        
+            img{
+                width: 10rem;
             }
         }
-
-        .ex6{
-            top: 142.6rem;
-            left: 10.5rem;
-
-            @media only screen and (max-height: 785px){
-                display: none;
-            }
-        }
-    }
-
-    .lines{
-        z-index: -2;
-        .svgLine{
+        
+        &-mainContent{
             width: 100%;
             height: 100%;
-        }
-    }
-
-    .upperSection{
-        width: 100%;
-        height: 90vh;
-    }
-
-    .dottedBack{
-        z-index: -3;
-        width: 110%;
-        height: 100%;
-        margin-left: -4.5rem;
-        margin-top: -4.5rem;
-
-        ///////// Polka doted background /////////
-        background-image: radial-gradient( #EBEBEB 3px,transparent 4px );
-        background-size: 110px 110px;
-    }
-
-    .slug{
-        height: max-content;
-        text-align: center;
-        margin-top: 14rem;
-
-        #slugOne{
-            font-size: 3.6rem;
-            font-family: 'Montserrat', sans-serif;
-            margin-left: -17rem;
-            font-weight: 800;
-        }
-        #slugTwo{
-            font-size: 3.6rem;
-            font-family: 'Montserrat', sans-serif;
-            margin-left: 2rem;
-            font-weight: 800;
-        }
-        #slugThree{
-            font-size: 2rem;
-            margin-left: 21.5rem;
-        }
-
-        @media only screen and (min-width: 750px){
-
-            #slugOne{
-                font-size: 5rem;
-                margin-left: -26rem;
-            }
-
-            #slugTwo{
-                font-size: 5rem;
-                margin-left: 8rem;
-            }
-
-            #slugThree{
-                font-size: 2rem;
-                margin-left: 30.5rem;
-            }
-        }
-
-        @media only screen and (min-width: 1024px){
-            text-align: left;
-            margin-left: 5rem;
-
-            #slugOne{
-                font-size: 5rem;
-                margin-left: 0;
-            }
-
-            #slugTwo{
-                font-size: 5rem;
-                margin-left: 8rem;
-            }
-
-            #slugThree{
-                font-size: 2rem;
-                margin-left: 35rem;
-            }
-        }
-
         
-    }
-
-    .btnOnama{
-        width: max-content;
-        height: max-content;
-        justify-self: center;
-        margin-top: 42rem;
+            .exes{
+                z-index: -1;
+                position: relative;
+                svg{
+                    position: absolute;
+                    width: 2.5rem;
+                    height: auto;
+                }
         
-
-        button{
-            cursor: pointer;
-            width: 18rem;
-            height: 5rem;
-            font-size: 2rem;
-            color: white;
-            outline: none;
-            background-color: black;
-            border: none;
-            border-radius: 5px;
-            
-        }
-    }
-    
-    .josLinkOnama{
-        width: max-content;
-        height: max-content;
-        align-self: flex-end;
-        justify-self: center;
-
-        a{
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            // width: 10rem;
-            text-decoration: none;
-            color: black;
-            font-size: 2.5rem;
-            font-weight: 500;
-            margin-bottom: 4rem;
-            
-        }
-
-        svg{
-            width: 3rem;  
-        }
-    }
-
-    .underSection{
-        height: 100%;
-        margin-bottom: 10rem;
-
-        h1{
-            height: max-content;
-            font-size: 3rem;
-            font-weight: 900;
-            justify-self: center;
-            padding-top: 7rem;
-        }
-
-        p{
-            padding-top: 5rem;
-            font-size: 1.7rem;
-            text-align: center;
-
-            span{
-                color: #1173A8;
+                .ex1{
+                    top: 10.6rem;
+                    left: -.4rem;
+                    fill: #1173A8;
+                }
+        
+                .ex2{
+                    top: 32.6rem;
+                    left: 32.5rem;
+                }
+        
+                .ex3{
+                    top: 54.6rem;
+                    left: 10.5rem;
+                }
+        
+                .ex4{
+                    top: 76.6rem;
+                    left: 32.5rem;
+                }
+        
+                .ex5{
+                    top: 131.6rem;
+                    left: 21.5rem;
+                    fill: #1173A8;
+        
+                    @media only screen and (max-height: 750px){
+                        display: none;
+                    }
+                }
+        
+                .ex6{
+                    top: 142.6rem;
+                    left: 10.5rem;
+        
+                    @media only screen and (max-height: 785px){
+                        display: none;
+                    }
+                }
             }
-
-            @media only screen and (min-width: 750px){
-                padding: 0 4rem 0 4rem;
+        
+            .lines{
+                z-index: -2;
+                .svgLine{
+                    width: 100%;
+                    height: 100%;
+                }
             }
-        }
-
-        .firstParagrafOnama{
-            @media only screen and (min-width: 1024px){
-                width: 50%;
+        
+            .upperSection{
+                width: 100%;
+                height: 90vh;
             }
-        }
-
-        .secondParagrafOnama{
-            @media only screen and (min-width: 1024px){
-                width: 50%;
-                justify-self: flex-end;
+        
+            .dottedBack{
+                z-index: -3;
+                width: 110%;
+                height: 100%;
+                margin-left: -4.5rem;
+                margin-top: -4.5rem;
+        
+                ///////// Polka doted background /////////
+                background-image: radial-gradient( #EBEBEB 3px,transparent 4px );
+                background-size: 110px 110px;
             }
-        }
-
-        .btnOnamaDetaljnije{
-            width: max-content;
-            height: max-content;
-            justify-self: center;
-            margin-top: 5rem;
-            // z-index: 10;
-
-            button{
-                width: 18rem;
-                height: 5rem;
-                font-size: 2rem;
-                color: white;
-                outline: none;
-                background-color: black;
-                border: none;
-                border-radius: 5px;
+        
+            .slug{
+                height: max-content;
+                width: max-content;
+                justify-self: center;
+                text-align: center;
+                margin-top: 14rem;
+        
+                #slugOne{
+                    font-size: 3.6rem;
+                    font-family: 'Montserrat', sans-serif;
+                    margin-left: -17rem;
+                    font-weight: 800;
+                }
+                #slugTwo{
+                    font-size: 3.6rem;
+                    font-family: 'Montserrat', sans-serif;
+                    margin-left: 2rem;
+                    font-weight: 800;
+                }
+                #slugThree{
+                    font-size: 1.5rem;
+                    margin-left: 20rem;
+                }
+        
+                @media only screen and (min-width: 750px){
+        
+                    #slugOne{
+                        font-size: 5rem;
+                        margin-left: -26rem;
+                    }
+        
+                    #slugTwo{
+                        font-size: 5rem;
+                        margin-left: 8rem;
+                    }
+        
+                    #slugThree{
+                        font-size: 2rem;
+                        margin-left: 30rem;
+                    }
+                }
                 
+                @media only screen and (min-width: 1265px){
+                    justify-self: left;
+                    margin-left: 5rem;
+                }
+            }
+        
+            .btnOnama{
+                width: max-content;
+                height: max-content;
+                justify-self: center;
+                margin-top: 42rem;
+                
+        
+                button{
+                    cursor: pointer;
+                    width: 18rem;
+                    height: 5rem;
+                    font-size: 2rem;
+                    color: white;
+                    outline: none;
+                    background-color: black;
+                    border: none;
+                    border-radius: 5px;
+                    
+                }
+            }
+            
+            .josLinkOnama{
+                width: max-content;
+                height: max-content;
+                align-self: flex-end;
+                justify-self: center;
+        
+                a{
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    // width: 10rem;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    margin-bottom: 4rem;
+                    
+                }
+        
+                svg{
+                    width: 3rem;  
+                }
+            }
+
+            .images{
+                width: 53%;
+                justify-self: right;
+                display: flex;
+                flex-direction: column;
+
+                & *{
+                    box-shadow: -5px 5px 15px #ccc;
+                }
+
+                }
+
+                .img1{
+                    width: 90%;
+                    display: none;
+
+                    @media only screen and (min-width: 1265px){
+                        display: block;
+                    }
+                }
+
+                .img2{
+                    display: none;
+                    width: 60%;
+                    align-self: flex-end;
+                    margin-top: -7rem;
+
+                    @media only screen and (min-width: 1265px){
+                        display: block;
+                    }
+                }
+            }
+        
+            .underSection{
+                height: 100%;
+                margin-bottom: 10rem;
+        
+                h1{
+                    height: max-content;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    justify-self: center;
+                    padding-top: 7rem;
+                }
+        
+                p{
+                    padding-top: 5rem;
+                    font-size: 1.7rem;
+                    text-align: center;
+        
+                    span{
+                        color: #1173A8;
+                    }
+        
+                    @media only screen and (min-width: 750px){
+                        padding: 0 4rem 0 4rem;
+                    }
+                }
+        
+                .firstParagrafOnama{
+                    @media only screen and (min-width: 1024px){
+                        width: 50%;
+                    }
+                }
+        
+                .secondParagrafOnama{
+                    @media only screen and (min-width: 1024px){
+                        width: 50%;
+                        justify-self: flex-end;
+                    }
+                }
+        
+                .btnOnamaDetaljnije{
+                    width: max-content;
+                    height: max-content;
+                    justify-self: center;
+                    margin-top: 5rem;
+                    // z-index: 10;
+        
+                    button{
+                        width: 18rem;
+                        height: 5rem;
+                        font-size: 2rem;
+                        color: white;
+                        outline: none;
+                        background-color: black;
+                        border: none;
+                        border-radius: 5px;
+                        
+                    }
+                }
+            }
+            &-footer{
+                width: 100%;
+                text-align: center;
+                color: white;
+                background-color: black;
+                padding: 20px 0 20px 0;
+            
+                p{
+                    padding: 10px 0 10px 0;
+                }
+            
+                @media only screen and (min-width: 750px){
+                    display: flex;
+                    justify-content: space-around;
+                }
             }
         }
-    }
-}
-
-.footer{
-    width: 100%;
-    text-align: center;
-    color: white;
-    background-color: black;
-    padding: 20px 0 20px 0;
-
-    p{
-        padding: 10px 0 10px 0;
-    }
-
-    @media only screen and (min-width: 750px){
-        display: flex;
-        justify-content: space-around;
-    }
+        
 }

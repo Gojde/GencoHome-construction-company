@@ -4,72 +4,78 @@
     grid-template-rows: minmax(10px, 1fr) minmax(min-content, 1410px) minmax(10px, 1fr);
 }
 
-.content{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content 1fr max-content; 
-}
-
-.header{
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.mainContent{
-    grid-column: 1;
-    grid-row: 2 / 3;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    .upperSection{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-
+.Onama{
+    &__content{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    
         display: grid;
-    }
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr max-content; 
 
-    .underSection{
-        grid-column: 1;
-        grid-row: 2 / -1;
-
-        display: grid;
+        &-header{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        
+        &-mainContent{
+            grid-column: 1;
+            grid-row: 2 / 3;
+        
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        
+            .upperSection{
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+        
+                display: grid;
+            }
+        
+            .underSection{
+                grid-column: 1;
+                grid-row: 2 / -1;
+        
+                display: grid;
+            }
+        
+            .dottedBack{
+                grid-column: 1;
+                grid-row: 1 / -1;
+            }
+        
+            .exes{
+                grid-column: 1;
+                grid-row: 1 / -1;
+            }
+        
+            .lines{
+                grid-column: 1;
+                grid-row: 1 / -1;
+            }
+        
+            .slug{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .btnOnama{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .josLinkOnama{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .images{
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
+        
+        &-footer{
+            grid-column: 1;
+            grid-row: 3 / -1;
+        }
     }
-
-    .dottedBack{
-        grid-column: 1;
-        grid-row: 1 / -1;
-    }
-
-    .exes{
-        grid-column: 1;
-        grid-row: 1 / -1;
-    }
-
-    .lines{
-        grid-column: 1;
-        grid-row: 1 / -1;
-    }
-
-    .slug{
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .btnOnama{
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .josLinkOnama{
-        grid-column: 1;
-        grid-row: 1;
-    }
-}
-
-.footer{
-    grid-column: 1;
-    grid-row: 3 / -1;
 }
