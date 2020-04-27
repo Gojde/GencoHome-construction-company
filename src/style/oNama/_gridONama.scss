@@ -1,10 +1,5 @@
-.wrapper{
-    display: grid;
-    grid-template-columns: minmax(10px, 1fr) minmax(min-content, 1410px) minmax(10px, 1fr);
-    grid-template-rows: minmax(10px, 1fr) minmax(min-content, 1410px) minmax(10px, 1fr);
-}
 
-.pocetna{
+.Onama{
     &__content{
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -15,7 +10,7 @@
 
         &-header{
             grid-column: 1;
-            grid-row: 1;
+            grid-row: 1 / 2;
         }
         
         &-mainContent{
@@ -23,24 +18,19 @@
             grid-row: 2 / 3;
         
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-        
-            .upperSection{
-                grid-column: 1 / 2;
-                grid-row: 1 / 2;
-        
-                display: grid;
-            }
-        
-            .underSection{
+
+            &--text{
                 grid-column: 1;
-                grid-row: 2 / -1;
+                grid-row: 1 / -1;
         
                 display: grid;
             }
         
-            &--dottedBack, &--exes, &--lines, .slug, .btnOnama, .josLinkPocetna, .images{
+            .textOne, .textTwo{
+                display: grid;
+            }
+        
+            &--dottedBack, &--exes, &--lines{
                 grid-column: 1;
                 grid-row: 1 / -1;
             }

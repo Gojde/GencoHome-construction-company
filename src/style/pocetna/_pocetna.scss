@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-.Onama{
+.pocetna{
 
     &__content{
         width: 100%;
@@ -22,7 +22,7 @@
             width: 100%;
             height: 100%;
         
-            .exes{
+            &--exes{
                 z-index: -1;
                 position: relative;
                 svg{
@@ -72,7 +72,7 @@
                 }
             }
         
-            .lines{
+            &--lines{
                 z-index: -2;
                 .svgLine{
                     width: 100%;
@@ -85,7 +85,7 @@
                 height: 90vh;
             }
         
-            .dottedBack{
+            &--dottedBack{
                 z-index: -3;
                 width: 110%;
                 height: 100%;
@@ -166,7 +166,7 @@
                 }
             }
             
-            .josLinkOnama{
+            .josLinkPocetna{
                 width: max-content;
                 height: max-content;
                 align-self: flex-end;
@@ -177,7 +177,6 @@
                     display: flex;
                     align-items: center;
                     flex-direction: column;
-                    // width: 10rem;
                     text-decoration: none;
                     color: black;
                     font-size: 2.5rem;
@@ -233,13 +232,17 @@
                     font-size: 3rem;
                     font-weight: 900;
                     justify-self: center;
-                    padding-top: 7rem;
+                    align-self: center;
                 }
         
                 p{
                     padding-top: 5rem;
                     font-size: 1.7rem;
                     text-align: center;
+
+                    @media only screen and(min-width: 1024px){
+                        font-size: 2rem;
+                    }
         
                     span{
                         color: #1173A8;
@@ -250,16 +253,24 @@
                     }
                 }
         
-                .firstParagrafOnama{
-                    @media only screen and (min-width: 1024px){
+                .secondParagrafPocetna, .firstParagrafPocetna{
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        margin-top: 2rem;
                         width: 50%;
+                        height: 1.5px;
+                        background-color: black;
+                        right: 25%;
                     }
-                }
-        
-                .secondParagrafOnama{
+                    
                     @media only screen and (min-width: 1024px){
                         width: 50%;
-                        justify-self: flex-end;
+                        justify-self: center;
+                        align-self: center;
+                        padding-bottom: 2rem;
+                        position: relative;
                     }
                 }
         
@@ -267,10 +278,10 @@
                     width: max-content;
                     height: max-content;
                     justify-self: center;
-                    margin-top: 5rem;
-                    // z-index: 10;
+                    align-self: center;
         
                     button{
+                        cursor: pointer;
                         width: 18rem;
                         height: 5rem;
                         font-size: 2rem;
