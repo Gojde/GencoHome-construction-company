@@ -1,4 +1,4 @@
-.Onama{
+.cenovnik{
 
     &__content{
         width: 100%;
@@ -19,58 +19,11 @@
 
             &--text{
                 width: 100%;
-
-                img{
-                    width: 90%;
-                    justify-self: center;
-                    align-self: center;
-                    margin: 3rem 0 3rem 0;
-                    box-shadow: -5px 5px 15px #ccc;
-
-                    @media only screen and(min-width: 1024px){
-                        width: 55%;
-                    }
-
-                    @media only screen and (min-width: 1265px){
-                        margin: 0;
-                    }
-                }
-
                 @media only screen and (min-width: 1265px){
-
-                    #imgOne{
-                        width: 47%;
-                        margin-right: 8rem;
-                        margin-top: -6rem;
-                    }
-
-                    #imgTwo{
-                        width: 33%;
-                        margin-top: -5rem;
-                    }
+                    justify-self: center ;
+                    width: 80%;
                 }
 
-                p{
-                    font-size: 1.7rem;
-                    text-align: center;
-                    margin: 3rem 0 3rem 0;
-
-                    span{
-                        color: #1173A8;
-                    }
-
-                    @media only screen and (min-width: 750px){
-                        padding: 0 4rem 0 4rem;
-                    }
-
-                    @media only screen and(min-width: 1024px){
-                        font-size: 2rem;
-                    }
-
-                    @media only screen and (min-width: 1265px){
-                        margin: 0;
-                    }
-                }
 
                 h1{
                     height: max-content;
@@ -80,48 +33,33 @@
                     margin: 5rem 0 4rem 0;
 
                     @media only screen and (min-width: 1265px){
-                        margin: 4rem 0 4rem 30rem;
-
-                        justify-self: flex-start;
-                        
+                        margin: 4rem 0 4rem 0rem;
                     }
                 }
 
-                .responsiveDivTextOne, .responsiveDivTextTwo{
-                    @media only screen and(min-width: 1024px){
-                        display: flex;
-                        align-items: center;
+                h2{
+                    height: max-content;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    justify-self: center;
+                    padding: 3rem 0 0 0;
+                }
 
-                        p{
-                            position: relative;
-                            &::after{
-                                content: "";
-                                position: absolute;
-                                margin-top: 4rem;
-                                width: 50%;
-                                height: 1.5px;
-                                background-color: black;
-                                left: 25%;
-                            }
-                        }
+                p{
+                    font-size: 1.7rem;
+                    text-align: left;
+                    margin: 2rem 0 3rem 0;
+                    line-height: 2.5rem;
+
+                    span{
+                        color: #1173A8;
+                        font-weight: 700;
                     }
                 }
 
-                .responsiveDivTextOne{
-                    @media only screen and (min-width: 1265px){
-                        margin-top: -5rem;
-                    }
-                }
-
-                
-                .textTwo{
-                    @media only screen and (min-width: 1265px){
-                        margin-left: 10rem;
-                    }
-                }
             }
 
-            .btnOnamaDetaljnije{
+            .btnCenovnikDetaljnije{
                 width: max-content;
                 height: max-content;
                 justify-self: center;
@@ -158,6 +96,10 @@
                 .ex2{
                     top: 32.6rem;
                     left: 32.5rem;
+
+                    @media only screen and (min-width: 1267px){
+                        left: 109.5rem;
+                    }
                 }
         
                 .ex3{
@@ -168,10 +110,6 @@
                 .ex4{
                     top: 76.6rem;
                     left: 32.5rem;
-
-                    @media only screen and (min-width: 1267px){
-                        display: none;
-                    }
                 }
         
                 .ex5{
@@ -182,36 +120,34 @@
                     @media only screen and (max-height: 750px){
                         display: none;
                     }
-
-                    @media only screen and (min-width: 1024px){
-                        display: none;
-                    }
                 }
                 .ex6{
                     top: 142.6rem;
                     left: 10.5rem;
-                    display: none;
-
-        
-                    @media only screen and (max-height: 785px){
-                        display: none;
-                    }
-
-                    @media only screen and (min-width: 750px){
-                        display: block;
-                    }
-
-                    @media only screen and (min-width: 1024px){
-                        display: none;
-                    }
                 }
             }
         
             &--lines{
                 z-index: -2;
+
                 .svgLine{
                     width: 100%;
                     height: 100%;
+                }
+
+                #mySVG1Responsive, #mySVG2Responsive{
+                    display: none;
+                }
+
+                @media only screen and (min-width: 1267px){
+
+                    #mySVG1Responsive, #mySVG2Responsive{
+                        display: block;
+                    }
+
+                    #mySVG1, #mySVG2{
+                        display: none;
+                    }
                 }
             }
         

@@ -1,5 +1,5 @@
 
-.Onama{
+.cenovnik{
     &__content{
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -23,14 +23,6 @@
                 grid-column: 1;
                 grid-row: 1 / -1;
         
-                display: grid;
-            }
-        
-            .textOne, .textTwo{
-                display: grid;
-            }
-
-            .responsiveDivTextOne, .responsiveDivTextTwo{
                 display: grid;
             }
         
