@@ -19,8 +19,14 @@
 
             &--text{
                 width: 100%;
+
+                @media only screen and (min-width: 750px){
+                    justify-self: center;
+                    width: 90%;
+                }
+
                 @media only screen and (min-width: 1265px){
-                    justify-self: center ;
+                    
                     width: 80%;
                 }
 
@@ -117,9 +123,9 @@
                     left: 21.5rem;
                     fill: #1173A8;
         
-                    @media only screen and (max-height: 750px){
-                        display: none;
-                    }
+                    // @media only screen and (max-height: 750px){
+                    //     display: none;
+                    // }
                 }
                 .ex6{
                     top: 142.6rem;

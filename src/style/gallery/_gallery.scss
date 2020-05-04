@@ -1,0 +1,142 @@
+.gallery{
+
+    &__content{
+        width: 100%;
+        height: max-content;
+
+        &-header{
+            width: 100%;
+            padding: .5rem;
+
+            display: flex;
+            justify-content: space-between;
+        
+            img{
+                width: 10rem;
+            }
+        }
+        
+        &-mainContent{
+            width: 100%;
+            height: 100%;
+
+            &--gallery{
+                width: 100%;
+                justify-self: center;
+
+                h1{
+                    height: max-content;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    justify-self: center;
+                    margin: 5rem 0 4rem 0;
+
+                    @media only screen and (min-width: 1265px){
+                        margin: 4rem 0 4rem 0rem;
+                    }
+                }
+
+                .galleria{
+                    // display: none;
+                    margin: 0 0 2rem 2.5rem;
+
+                    @media only screen and (min-width: 750px){
+                        margin: 0 0 6rem 9rem;
+                    }
+                }
+
+                .galleria-thumbnails .galleria-image { 
+                    width:295px;
+
+                    // @media only screen and (min-width: 1265px){
+                    //     margin: 6rem 0 0 9rem;
+                    // }
+                }
+            }
+        
+            &--exes{
+                z-index: -1;
+                position: relative;
+                svg{
+                    position: absolute;
+                    width: 2.5rem;
+                    height: auto;
+                }
+        
+                .ex1{
+                    top: 10.6rem;
+                    left: -.4rem;
+                    fill: #1173A8;
+                }
+        
+                .ex2{
+                    top: 32.6rem;
+                    left: 32.5rem;
+                }
+        
+                .ex3{
+                    top: 54.6rem;
+                    left: 10.5rem;
+                }
+        
+                .ex4{
+                    top: 76.6rem;
+                    left: 32.5rem;
+                }
+        
+                .ex5{
+                    top: 131.6rem;
+                    left: 21.5rem;
+                    fill: #1173A8;
+        
+                    // @media only screen and (max-height: 750px){
+                    //     display: none;
+                    // }
+                }
+                .ex6{
+                    top: 142.6rem;
+                    left: 10.5rem;
+                }
+            }
+        
+            &--lines{
+                z-index: -2;
+
+                .svgLine{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        
+            &--dottedBack{
+                z-index: -3;
+                width: 110%;
+                height: 100%;
+                margin-left: -4.5rem;
+                margin-top: -4.5rem;
+        
+                ///////// Polka doted background /////////
+                background-image: radial-gradient( #EBEBEB 3px,transparent 4px );
+                background-size: 110px 110px;
+            }
+
+            }
+            &-footer{
+                width: 100%;
+                text-align: center;
+                color: white;
+                background-color: black;
+                padding: 20px 0 20px 0;
+            
+                p{
+                    padding: 10px 0 10px 0;
+                }
+            
+                @media only screen and (min-width: 750px){
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+        
+}
