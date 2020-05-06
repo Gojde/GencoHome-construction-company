@@ -25,10 +25,17 @@
                 display: grid;
 
                 .procesSteps{
-                    display: grid;
+
+                    @media only screen and(min-width: 1024px){
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        column-gap: 5rem;
+                    }
+
                     @media only screen and(min-width: 1267px){
                         grid-template-columns: 1fr 1fr 1fr;
-                        column-gap: 10rem;
+                        column-gap: 9rem;
+                        height: 70vh;
                     }
                 }
             }

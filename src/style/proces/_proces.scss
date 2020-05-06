@@ -36,7 +36,7 @@
                     font-size: 2rem;
                     font-weight: 700;
                     justify-self: center;
-                    padding: 1rem 0 0 0;
+                    padding-top: 1rem;
                 }
 
                 svg{
@@ -70,11 +70,16 @@
                     flex-direction: column;
                     align-items: center;
                 }
+
+                .procesSteps{
+                    margin-bottom: 2rem;
+                }
             }
         
             &--exes{
                 z-index: -1;
                 position: relative;
+
                 svg{
                     position: absolute;
                     width: 2.5rem;
@@ -85,35 +90,71 @@
                     top: 10.6rem;
                     left: -.4rem;
                     fill: #1173A8;
+
+                    @media only screen and(min-width: 1267px){
+                        top: 21.6rem;
+                        left: -.4rem;
+                    }
                 }
         
                 .ex2{
                     top: 32.6rem;
                     left: 32.5rem;
+
+                    @media only screen and(min-width: 1267px){
+                        top: 10.6rem;
+                        left: 54.5rem;
+                    }
                 }
         
                 .ex3{
                     top: 54.6rem;
                     left: 10.5rem;
+
+                    @media only screen and(min-width: 1267px){
+                        top: 21.6rem;
+                        left: 98.5rem;
+                    }
                 }
         
                 .ex4{
                     top: 76.6rem;
                     left: 32.5rem;
+
+                    @media only screen and(min-width: 1267px){
+                        top: 43.6rem;
+                        left: 32.5rem;
+                    }
                 }
         
                 .ex5{
-                    top: 131.6rem;
-                    left: 21.5rem;
+                    top: 98.6rem;
+                    left: -.3rem;
                     fill: #1173A8;
-        
-                    // @media only screen and (max-height: 750px){
-                    //     display: none;
-                    // }
+                    
+                    @media only screen and(min-width: 1024px){
+                        display: none;
+                    }
+
+                    @media only screen and(min-width: 1267px){
+                        display: block;
+                        top: 54.7rem;
+                        left: 65.7rem;
+                    }
                 }
                 .ex6{
-                    top: 142.6rem;
-                    left: 10.5rem;
+                    top: 120.6rem;
+                    left: 21.5rem;
+
+                    @media only screen and(min-width: 1024px){
+                        display: none;
+                    }
+
+                    @media only screen and(min-width: 1267px){
+                        display: block;
+                        top: 43.6rem;
+                        left: 98.5rem;
+                    }
                 }
             }
         
@@ -124,6 +165,20 @@
                     width: 100%;
                     height: 100%;
                 }
+
+                .lineDesktop{
+                    display: none;
+
+                    @media only screen and(min-width: 1267px){
+                        display: block;
+                    }
+                }
+
+                .lineMobile{
+                    @media only screen and(min-width: 1267px){
+                        display: none;
+                    }
+                }
             }
         
             &--dottedBack{
@@ -132,7 +187,6 @@
                 height: 100%;
                 margin-left: -4.5rem;
                 margin-top: -4.5rem;
-                justify-self: center;
         
                 ///////// Polka doted background /////////
                 background-image: radial-gradient( #EBEBEB 3px,transparent 4px );
