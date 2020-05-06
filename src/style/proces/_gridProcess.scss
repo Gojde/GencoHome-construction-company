@@ -1,0 +1,47 @@
+.proces{
+    &__content{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr max-content; 
+
+        &-header{
+            grid-column: 1;
+            grid-row: 1 / 2;
+        }
+        
+        &-mainContent{
+            grid-column: 1;
+            grid-row: 2 / 3;
+        
+            display: grid;
+
+            &--proces{
+                grid-column: 1;
+                grid-row: 1 / -1;
+        
+                display: grid;
+
+                .procesSteps{
+                    display: grid;
+                    @media only screen and(min-width: 1267px){
+                        grid-template-columns: 1fr 1fr 1fr;
+                        column-gap: 10rem;
+                    }
+                }
+            }
+        
+            &--dottedBack, &--exes, &--lines{
+                grid-column: 1;
+                grid-row: 1 / -1;
+            }
+        }
+        
+        &-footer{
+            grid-column: 1;
+            grid-row: 3 / -1;
+        }
+    }
+}
