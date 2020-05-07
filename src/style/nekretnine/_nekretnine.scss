@@ -1,0 +1,210 @@
+.nekretnine{
+
+    &__content{
+        width: 100%;
+        height: max-content;
+
+        &-header{
+            width: 100%;
+            padding: .5rem;
+
+            display: flex;
+            justify-content: space-between;
+        
+            img{
+                width: 10rem;
+            }
+        }
+        
+        &-mainContent{
+            width: 100%;
+            height: 100%;
+
+            &--nekretnine{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1{
+                    height: max-content;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    justify-self: center;
+                    margin: 5rem 0 4rem 0;
+                }
+
+                p{
+                    width: 100%;
+                    font-size: 1.7rem;
+                    text-align: center;
+                    padding: 0 0 4rem 0;
+                }
+
+
+                img{
+                    width: 100%;
+                    box-shadow: -5px 5px 15px #ccc;
+                    justify-self: center;
+
+                    @media only screen and(min-width: 750px){
+                        width: 640px;
+                    }
+                }
+
+                .btnOnamaDetaljnije{
+                    width: max-content;
+                    height: max-content;
+                    justify-self: center;
+                    align-self: center;
+                    margin: 10rem 0 6rem 0;
+
+                    @media only screen and(min-width: 750px){
+                        margin-top: 3rem;
+                    }
+        
+                    button{
+                        width: 18rem;
+                        height: 5rem;
+                        font-size: 2rem;
+                        color: white;
+                        outline: none;
+                        background-color: black;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        
+            &--exes{
+                z-index: -1;
+                position: relative;
+
+                svg{
+                    position: absolute;
+                    width: 2.5rem;
+                    height: auto;
+                }
+        
+                .ex1{
+                    top: 10.6rem;
+                    left: -.4rem;
+                    fill: #1173A8;
+
+                    @media only screen and(min-width: 1267px){
+                        top: 21.6rem;
+                        left: -.4rem;
+                    }
+                }
+        
+                .ex2{
+                    top: 32.6rem;
+                    left: 32.5rem;
+
+                    @media only screen and(min-width: 1267px){
+                        top: 10.6rem;
+                        left: 54.5rem;
+                    }
+                }
+        
+                .ex3{
+                    top: 54.6rem;
+                    left: 10.5rem;
+
+                    @media only screen and(min-width: 1267px){
+                        top: 21.6rem;
+                        left: 98.5rem;
+                    }
+                }
+        
+                .ex4{
+                    top: 76.6rem;
+                    left: 32.5rem;
+
+                    @media only screen and(min-width: 1267px){
+                        top: 43.6rem;
+                        left: 32.5rem;
+                    }
+                }
+        
+                .ex5{
+                    top: 98.6rem;
+                    left: -.3rem;
+                    fill: #1173A8;
+                    display: none;
+
+                    @media only screen and(min-width: 1267px){
+                        display: block;
+                        top: 54.7rem;
+                        left: 65.7rem;
+                    }
+                }
+                .ex6{
+                    top: 120.6rem;
+                    left: 21.5rem;
+                    display: none;
+
+                    @media only screen and(min-width: 1267px){
+                        display: block;
+                        top: 43.6rem;
+                        left: 98.5rem;
+                    }
+                }
+            }
+        
+            &--lines{
+                z-index: -2;
+
+                .svgLine{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .lineDesktop{
+                    display: none;
+
+                    @media only screen and(min-width: 1267px){
+                        display: block;
+                    }
+                }
+
+                .lineMobile{
+                    @media only screen and(min-width: 1267px){
+                        display: none;
+                    }
+                }
+            }
+        
+            &--dottedBack{
+                z-index: -3;
+                width: 110%;
+                height: 100%;
+                margin-left: -4.5rem;
+                margin-top: -4.5rem;
+        
+                ///////// Polka doted background /////////
+                background-image: radial-gradient( #EBEBEB 3px,transparent 4px );
+                background-size: 110px 110px;
+            }
+
+            }
+            &-footer{
+                width: 100%;
+                text-align: center;
+                color: white;
+                background-color: black;
+                padding: 20px 0 20px 0;
+            
+                p{
+                    padding: 10px 0 10px 0;
+                }
+            
+                @media only screen and (min-width: 750px){
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+        
+}
