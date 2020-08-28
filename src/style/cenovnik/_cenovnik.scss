@@ -68,6 +68,70 @@
 
             }
 
+            .cenovnikTextOne{
+                &__firstPart, &__secondPart{
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: -5px 5px 15px #ccc;
+                    margin: 2rem 0;
+
+                    p{
+                        padding: 2rem;
+                    }
+                    @media only screen and (min-width: 750px){
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                    img{
+                        width: 300px;
+                        align-self: center;
+                        box-shadow: -5px 5px 15px #ccc;
+                        margin-bottom: 3rem;
+
+                        @media only screen and (min-width: 750px){
+                            margin: 3rem 3rem;
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+
+            .cenovnikTextTwo{
+                &__firstPart, &__secondPart{
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: -5px 5px 15px #ccc;
+                    margin: 2rem 0;
+
+                    p{
+                        padding: 2rem;
+                    }
+                    @media only screen and (min-width: 750px){
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                    img{
+                        width: 300px;
+                        align-self: center;
+                        box-shadow: -5px 5px 15px #ccc;
+                        margin-bottom: 3rem;
+
+                        @media only screen and (min-width: 750px){
+                            margin: 3rem 3rem;
+                            width: 500px;
+                        }
+                    }
+                }
+
+                .napomena{
+                    box-shadow: -5px 5px 15px #ccc;
+                    margin: 2rem 0;
+                    p{
+                        padding: 2rem 2rem;
+                    }
+                }
+            }
+
             .btnCenovnikDetaljnije{
                 width: max-content;
                 height: max-content;
@@ -181,12 +245,21 @@
                 padding: 20px 0 20px 0;
             
                 p{
+                    font-size: 1.2rem;
                     padding: 10px 0 10px 0;
+                    line-height: 2rem;
                 }
             
                 @media only screen and (min-width: 750px){
                     display: flex;
                     justify-content: space-around;
+                    text-align: left;
+                    
+
+                    .dontAlignLeft{
+                        text-align: center;
+                        align-self: center;
+                    }
                 }
             }
         }

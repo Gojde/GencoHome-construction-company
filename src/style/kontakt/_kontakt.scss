@@ -36,6 +36,10 @@
                     margin: 5rem 0 4rem 0;
                 }
 
+                .contact100-more{
+                    font-size: 1.5rem;
+                }
+
                 .container-contact100-form-btn{
                     width: max-content;
                     height: max-content;
@@ -347,12 +351,21 @@
                 padding: 20px 0 20px 0;
             
                 p{
+                    font-size: 1.2rem;
                     padding: 10px 0 10px 0;
+                    line-height: 2rem;
                 }
-            
+
                 @media only screen and (min-width: 750px){
                     display: flex;
                     justify-content: space-around;
+                    text-align: left;
+                    
+
+                    .dontAlignLeft{
+                        text-align: center;
+                        align-self: center;
+                    }
                 }
             }
         }

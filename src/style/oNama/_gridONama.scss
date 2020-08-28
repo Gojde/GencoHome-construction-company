@@ -26,12 +26,21 @@
                 display: grid;
             }
         
-            .textOne, .textTwo{
+            .textOne, .textTwo .textThree{
                 display: grid;
             }
 
-            .responsiveDivTextOne, .responsiveDivTextTwo{
+            .responsiveDivTextOne, .responsiveDivTextTwo, .responsiveDivTextThree{
                 display: grid;
+            }
+
+            .cenovnikTextOne{
+                &__firstPart{
+                    img{
+                        width: 60%;
+                    }
+                    display: flex;
+                }
             }
         
             &--dottedBack, &--exes, &--lines{
